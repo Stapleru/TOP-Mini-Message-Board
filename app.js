@@ -4,7 +4,7 @@ const path = require("node:path");
 const indexRouter = require("./routes/indexRouter");
 const messageRouter = require("./routes/messageRouter");
 
-const PORT = 3030;
+const PORT = process.env.PORT || 3030;
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
